@@ -1,0 +1,42 @@
+// 设计页面的公共总样式:
+@import url('//at.alicdn.com/t/font_2716278_820asr5fvst.css');
+
+.design-wrap {
+
+    .loading-mask {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.295);
+        z-index: 10;
+        display: none;
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('../../images/icons/icon-loading.png') no-repeat center center;
+            background-size: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: loadingMask 900ms linear infinite;
+        }
+    }
+
+    @keyframes loadingMask {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+
+        }
+
+    }
+}
