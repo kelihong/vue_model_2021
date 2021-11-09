@@ -1,6 +1,5 @@
 # vue_design
 
-### !!! 图片上传域名变更  img.jjxwy.com
 
 ## Project setup
 ```
